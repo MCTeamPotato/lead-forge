@@ -1,0 +1,12 @@
+### Usage
+- Download zip
+- Open in VSCode
+- Search `lead` and `Lead` to replace them with your modID and name
+- Change `lead` directory folder name & `lead.mixins.json` file name with your modID
+- Close VSCode
+- Open Folder as IDEA project and enjoy
+
+### Some Features Note
+- MixinExtras is included. Remove `MixinExtrasBootstrap.init();` in `MixinConfigPlugin.java` and `shadow(annotationProcessor("io.github.llamalad7:mixinextras-common:${project.mixinextras_version}"))` in dependencies if you don't need it.
+- TaskPublishCurseForge is set up, turn to GitHub actions for easy publishing -- Don't forget to write CurseForge project id in `gradle.properties`
+- When porting between 1.16.5 & 1.18.2 & 1.19.2 & 1.20.1 forge, just change the `minecraft_version` in `gradle.properties`. Corresponding forge & java & parchment version is auto-adapted in `build.gradle`
